@@ -20,6 +20,10 @@ python setup.py install
 
 Alternatively, you can install package via PyPI `pip` package manager.
 
+```bash
+pip install universities-api-wrapper
+```
+
 ## Usage
 
 Once installed, you can use wrapper the following way. First, instantiate the library.
