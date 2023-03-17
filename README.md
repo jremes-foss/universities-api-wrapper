@@ -1,6 +1,6 @@
 # Universities API Wrapper
 
-This is a small API wrapper designed to consume [Universities API](https://github.com/Hipo/university-domains-list-api) from Python command line. API consumer was built as a project to build first Python library. 
+This is a small API wrapper designed to consume [Universities API](https://github.com/Hipo/university-domains-list-api) by [Hipo](http://hipolabs.com/). from Python command line. API consumer was built as a project to build first Python library.
 
 ## Requirements
 
