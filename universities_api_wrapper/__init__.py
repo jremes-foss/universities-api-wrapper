@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 class HipolabsUniversitiesAPI:
     """ Main class for API wrapper"""
-    def __init__(self, method):
+    def __init__(self, method, port):
         self.method = method
 
     @staticmethod
