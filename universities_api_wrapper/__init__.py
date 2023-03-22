@@ -13,6 +13,7 @@ class HipolabsUniversitiesAPI:
     """ Main class for API wrapper"""
     def __init__(self, method, port):
         self.method = method
+        self.port = port
 
     @staticmethod
     def _get_method(method):
