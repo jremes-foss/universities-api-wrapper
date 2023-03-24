@@ -21,7 +21,7 @@ class HipolabsUniversitiesAPI:
         if method == 'remote':
             return "http://universities.hipolabs.com/search"
         elif method == "local":
-            return "http://127.0.0.1:5000/search"
+            return "http://127.0.0.1:{port}}/search"
         else:
             raise UniversitiesAPIError("Unknown method!")
 
