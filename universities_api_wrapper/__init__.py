@@ -41,7 +41,7 @@ class HipolabsUniversitiesAPI:
     def search(self, country=None, name=None) -> dict:
         """ This method searches by name and country. """
 
-        base_url = self._get_method(self.method)
+        base_url = self._get_method(self.method, self.port)
 
         if not country and not name:
             raise ValueError("Please provide valid university name or country.")
