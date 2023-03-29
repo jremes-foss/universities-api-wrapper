@@ -16,7 +16,7 @@ class HipolabsUniversitiesAPI:
         self.port = port
 
     @staticmethod
-    def _get_method(method, port):
+    def _get_method(method, port=8080):
         """ Selects the connection method, either remote or local. """
         if method == 'remote':
             return "http://universities.hipolabs.com/search"
