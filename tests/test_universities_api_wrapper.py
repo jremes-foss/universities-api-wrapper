@@ -10,6 +10,9 @@ def method():
     """ Fixture for local connection method. """
     return "local"
 
+def port():
+    return "8080"
+
 client = HipolabsUniversitiesAPI(method)
 
 def test_client():
