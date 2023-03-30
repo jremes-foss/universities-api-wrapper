@@ -10,6 +10,7 @@ def method():
     """ Fixture for local connection method. """
     return "local"
 
+@pytest.fixture
 def port():
     return "8080"
 
