@@ -25,7 +25,7 @@ def test_endpoints():
     ret = client.endpoints()
     assert ret == ["name", "country"]
 
-def test_get_method(method):
+def test_get_method(method, port):
     """ Tests if connection method returns local URL. """
     ret = client._get_method(method)
     assert ret == "http://127.0.0.1:5000/search"
