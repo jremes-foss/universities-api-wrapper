@@ -27,7 +27,7 @@ def test_endpoints():
 
 def test_get_method(method, port):
     """ Tests if connection method returns local URL. """
-    ret = client._get_method(method)
+    ret = client._get_method(method, port)
     assert ret == "http://127.0.0.1:5000/search"
 
 @mock.patch('universities_api_wrapper.HipolabsUniversitiesAPI.search')
