@@ -14,7 +14,7 @@ def method():
 def port():
     return "8080"
 
-client = HipolabsUniversitiesAPI(method)
+client = HipolabsUniversitiesAPI(method, port)
 
 def test_client():
     """ Tests if client is up. """
