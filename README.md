@@ -39,7 +39,7 @@ Then initialize the client. If you are using local connection only:
 client = HipolabsUniversitiesAPI("local")
 ```
 
-By default, local connector is attempting to connect port `5000/tcp`.
+By default, local connector is attempting to connect port `8080/tcp`.
 
 Alternatively, if you wish to use remote connection:
 
