@@ -34,7 +34,7 @@ def test_get_method(method, port):
 def test_search(mock_response):
     """ Tests main API call with MagicMock. """
     mock_response.return_value.request.method = "GET"
-    mock_response.return_value.url = "http://127.0.0.1:5000/search?name=Middle&country=Turkey"
+    mock_response.return_value.url = "http://127.0.0.1:8080/search?name=Middle&country=Turkey"
     mock_response.return_value.status_code = 200
     mock_response.return_value.text = "[{ \
         'state-province': None, \
