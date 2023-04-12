@@ -13,7 +13,7 @@ class HipolabsUniversitiesAPI:
     """ Main class for API wrapper"""
     def __init__(self, method, port=8080):
         self.method = method
-        self.port = port if port is not None else port
+        self.port = port if port is not None else 8080
 
     @staticmethod
     def _get_method(method, port):
