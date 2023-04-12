@@ -11,12 +11,12 @@ logger = logging.getLogger(__name__)
 
 class HipolabsUniversitiesAPI:
     """ Main class for API wrapper"""
-    def __init__(self, method, port):
+    def __init__(self, method, port=8080):
         self.method = method
-        self.port = port
+        self.port = port if port is not None else port
 
     @staticmethod
-    def _get_method(method, port=8080):
+    def _get_method(method, port):
         """ Selects the connection method, either remote or local. """
         if method == 'remote':
             return "http://universities.hipolabs.com/search"
