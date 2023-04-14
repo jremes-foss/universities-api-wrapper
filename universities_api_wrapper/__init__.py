@@ -10,7 +10,7 @@ logging.basicConfig(level="INFO")
 logger = logging.getLogger(__name__)
 
 class HipolabsUniversitiesAPI:
-    """ Main class for API wrapper"""
+    """ Main class for API wrapper. """
     def __init__(self, method, port=8080):
         self.method = method
         self.port = port if port is not None else 8080
