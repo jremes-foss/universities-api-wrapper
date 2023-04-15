@@ -47,6 +47,12 @@ Alternatively, if you wish to use remote connection:
 client = HipolabsUniversitiesAPI("remote")
 ```
 
+If you wish to use alternative port:
+
+```python
+client = HipolabsUniversitiesAPI("remote", 8888)
+```
+
 If you pass anything else, library will raise `UniversitiesAPIError`.
 
 Client has now been initialized. Let's start searching.
