@@ -47,7 +47,7 @@ Alternatively, if you wish to use remote connection:
 client = HipolabsUniversitiesAPI("remote")
 ```
 
-If you wish to use alternative port:
+If you wish to use alternative port, for example, `8888/tcp`:
 
 ```python
 client = HipolabsUniversitiesAPI("remote", 8888)
