@@ -10,17 +10,18 @@ logging.basicConfig(level="INFO")
 logger = logging.getLogger(__name__)
 
 class HipolabsUniversitiesAPI:
-    """ Main class for API wrapper"""
-    def __init__(self, method):
+    """ Main class for API wrapper. """
+    def __init__(self, method, port=8080):
         self.method = method
+        self.port = port if port is not None else 8080
 
     @staticmethod
-    def _get_method(method):
+    def _get_method(method, port):
         """ Selects the connection method, either remote or local. """
         if method == 'remote':
             return "http://universities.hipolabs.com/search"
         elif method == "local":
-            return "http://127.0.0.1:5000/search"
+            return f"http://127.0.0.1:{port}/search"
         else:
             raise UniversitiesAPIError("Unknown method!")
 
@@ -40,7 +41,7 @@ class HipolabsUniversitiesAPI:
     def search(self, country=None, name=None) -> dict:
         """ This method searches by name and country. """
 
-        base_url = self._get_method(self.method)
+        base_url = self._get_method(self.method, self.port)
 
         if not country and not name:
             raise ValueError("Please provide valid university name or country.")

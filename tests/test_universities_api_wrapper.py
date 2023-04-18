@@ -10,7 +10,11 @@ def method():
     """ Fixture for local connection method. """
     return "local"
 
-client = HipolabsUniversitiesAPI(method)
+@pytest.fixture
+def port():
+    return "8080"
+
+client = HipolabsUniversitiesAPI(method, port)
 
 def test_client():
     """ Tests if client is up. """
@@ -21,16 +25,16 @@ def test_endpoints():
     ret = client.endpoints()
     assert ret == ["name", "country"]
 
-def test_get_method(method):
+def test_get_method(method, port):
     """ Tests if connection method returns local URL. """
-    ret = client._get_method(method)
-    assert ret == "http://127.0.0.1:5000/search"
+    ret = client._get_method(method, port)
+    assert ret == "http://127.0.0.1:8080/search"
 
 @mock.patch('universities_api_wrapper.HipolabsUniversitiesAPI.search')
 def test_search(mock_response):
     """ Tests main API call with MagicMock. """
     mock_response.return_value.request.method = "GET"
-    mock_response.return_value.url = "http://127.0.0.1:5000/search?name=Middle&country=Turkey"
+    mock_response.return_value.url = "http://127.0.0.1:8080/search?name=Middle&country=Turkey"
     mock_response.return_value.status_code = 200
     mock_response.return_value.text = "[{ \
         'state-province': None, \
