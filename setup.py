@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Universities API Wrapper'
 LONG_DESCRIPTION = 'Python package for consuming universities-domains-list API'
 
@@ -14,7 +14,7 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         url='https://github.com/jremes-foss/universities-api-wrapper/',
-        download_url='https://github.com/jremes-foss/universities-api-wrapper/archive/refs/tags/0.0.1.tar.gz',
+        download_url='https://github.com/jremes-foss/universities-api-wrapper/archive/refs/tags/0.0.2.tar.gz',
         install_requires=['requests', 'mock'],
         keywords=['python', 'api', 'wrapper', 'education', 'universities'],
         classifiers= [
