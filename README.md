@@ -1,4 +1,5 @@
 # Universities API Wrapper
+![Build](https://github.com/jremes-foss/universities-api-wrapper/actions/workflows/ci.yml/badge.svg?branch=main)
 [![Downloads](https://static.pepy.tech/badge/universities-api-wrapper)](https://pepy.tech/project/universities-api-wrapper)
 
 This is a small API wrapper designed to consume [Universities API](https://github.com/Hipo/university-domains-list-api) by [Hipo](http://hipolabs.com/). from Python command line. API consumer was built as a project to build first Python library.
