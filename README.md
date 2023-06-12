@@ -86,7 +86,7 @@ This module has built-in unit test kit in `tests` folder. You can run the unit t
 python -m pytest tests
 ```
 
-This module uses Continuous Integration with GitHub Actions. Pipeline is designed to run automated unit tests as part of Continuous Integration pipeline.
+This module uses Continuous Integration with [GitHub Actions](https://docs.github.com/en/actions). Pipeline is designed to run automated unit tests as part of Continuous Integration pipeline.
 
 ## License
 
