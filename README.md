@@ -18,6 +18,8 @@ Install the package via:
 python setup.py install
 ```
 
+### Docker installation
+
 ### PyPI installation
 
 Alternatively, you can install package via PyPI `pip` package manager.
