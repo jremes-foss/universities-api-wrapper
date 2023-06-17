@@ -20,7 +20,7 @@ python setup.py install
 
 ### Docker installation
 
-TODO
+GitHub repository includes Dockerfile for testing on local box.
 
 ### PyPI installation
 
