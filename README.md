@@ -22,6 +22,12 @@ python setup.py install
 
 GitHub repository includes Dockerfile for testing on local box.
 
+Build Docker image with following command:
+
+```bash
+docker build .
+```
+
 ### PyPI installation
 
 Alternatively, you can install package via PyPI `pip` package manager.
