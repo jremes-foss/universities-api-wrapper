@@ -30,6 +30,12 @@ docker build .
 
 This builds the Docker image. Next, you can run the image in container:
 
+```bash
+docker exec -it CONTAINER_ID bash
+```
+
+This will land you in a shell in Docker container.
+
 ### PyPI installation
 
 Alternatively, you can install package via PyPI `pip` package manager.
