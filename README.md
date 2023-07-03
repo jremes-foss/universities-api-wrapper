@@ -34,7 +34,7 @@ This builds the Docker image. Next, you can run the image in container:
 docker exec -it CONTAINER_ID bash
 ```
 
-This will land you in a shell in Docker container which allows you to use the library.
+This will land you in a shell in Docker container which allows you to use the library for testing purposes.
 
 ### PyPI installation
 
