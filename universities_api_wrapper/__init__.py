@@ -57,6 +57,8 @@ class HipolabsUniversitiesAPI:
         response = response.json()
 
         return response
+    
+    # Properties go here - TODO
 
 
 class UniversitiesAPIError(Exception):
