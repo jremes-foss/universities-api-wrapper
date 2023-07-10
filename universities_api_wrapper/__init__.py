@@ -59,6 +59,10 @@ class HipolabsUniversitiesAPI:
         return response
     
     # Properties go here - TODO
+    @property
+    def names():
+        pass
+    
 
 
 class UniversitiesAPIError(Exception):
