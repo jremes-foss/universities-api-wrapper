@@ -38,6 +38,10 @@ class HipolabsUniversitiesAPI:
         """ Returns endpoints of universities API. """
         return ["name", "country"]
 
+    @staticmethod
+    def _names(response: Response):
+        pass
+
     def search(self, country=None, name=None) -> dict:
         """ This method searches by name and country. """
 
