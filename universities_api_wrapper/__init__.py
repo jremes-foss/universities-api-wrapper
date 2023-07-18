@@ -39,7 +39,7 @@ class HipolabsUniversitiesAPI:
         return ["name", "country"]
 
     @staticmethod
-    def _names(response: Response):
+    def _names(response: Response) -> list:
         """ Returns names of universities. """
         pass
 
