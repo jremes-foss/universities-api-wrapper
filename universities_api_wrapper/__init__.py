@@ -41,7 +41,7 @@ class HipolabsUniversitiesAPI:
     @staticmethod
     def _names(response: Response) -> list:
         """ Returns names of universities. """
-        pass
+        print(response)
 
     def search(self, country=None, name=None) -> dict:
         """ This method searches by name and country. """
