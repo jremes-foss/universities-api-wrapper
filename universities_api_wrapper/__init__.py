@@ -43,7 +43,7 @@ class HipolabsUniversitiesAPI:
         """ Returns names of universities. """
         print(response)
 
-    def search(self, country=None, name=None) -> dict:
+    def search(self, country=None, name=None, filter=None) -> dict:
         """ This method searches by name and country. """
 
         base_url = self._get_method(self.method, self.port)
