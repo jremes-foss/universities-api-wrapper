@@ -38,7 +38,6 @@ class HipolabsUniversitiesAPI:
         """ Returns endpoints of universities API. """
         return ["name", "country"]
 
-    @staticmethod
     def _names(response: Response) -> list:
         """ Returns names of universities. """
         print(response)
