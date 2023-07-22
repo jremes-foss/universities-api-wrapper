@@ -62,11 +62,6 @@ class HipolabsUniversitiesAPI:
 
         return response
     
-    # Properties go here - TODO
-    @property
-    def names(self):
-        """ Return only names of the universities in response. """
-        return self._names
     
 
 
