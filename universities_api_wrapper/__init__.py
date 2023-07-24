@@ -59,8 +59,6 @@ class HipolabsUniversitiesAPI:
 
         return response
     
-    
-
 
 class UniversitiesAPIError(Exception):
     """ Empty class used for raising exceptions. """
