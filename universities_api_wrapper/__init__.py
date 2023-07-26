@@ -39,7 +39,7 @@ class HipolabsUniversitiesAPI:
         return ["name", "country"]
 
     def names(response):
-        pass
+        return list(uni for uni in response['name'])
 
     def search(self, country=None, name=None, filter=None) -> dict:
         """ This method searches by name and country. """
