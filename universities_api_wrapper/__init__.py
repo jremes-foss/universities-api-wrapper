@@ -40,7 +40,10 @@ class HipolabsUniversitiesAPI:
 
     def names(dictionary):
         """ Filter which returns names of universities. """
-        return list(uni for uni in dictionary['name'])
+        names = []
+        for uni in dictionary:
+            names.append(uni['name'])
+        return names
 
     def search(self, country=None, name=None, filter=None) -> dict:
         """ This method searches by name and country. """
