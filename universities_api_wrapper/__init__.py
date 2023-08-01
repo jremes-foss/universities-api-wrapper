@@ -38,14 +38,6 @@ class HipolabsUniversitiesAPI:
         """ Returns endpoints of universities API. """
         return ["name", "country"]
 
-    # @staticmethod
-    # def names(dictionary):
-    #     """ Filter which returns names of universities. """
-    #     names = []
-    #     for uni in dictionary:
-    #         names.append(uni['name'])
-    #     return names
-
     def get_names(self, response: Response):
         names = []
         for uni in response:
