@@ -39,6 +39,7 @@ class HipolabsUniversitiesAPI:
         return ["name", "country"]
 
     def get_names(self, response: Response):
+        """ Returns names of universities in a list. """
         names = []
         for uni in response:
             names.append(uni['name'])
