@@ -67,7 +67,7 @@ class HipolabsUniversitiesAPI:
             response = self.get_names(response)
 
         return response
-    
+
 
 class UniversitiesAPIError(Exception):
     """ Empty class used for raising exceptions. """
