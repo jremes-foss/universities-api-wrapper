@@ -96,6 +96,8 @@ This function is searching by country and university name.
 client.search("Turkey", "East")
 ```
 
+
+
 ## Unit Tests and Continuous Integration
 
 This module has built-in unit test kit in `tests` folder. You can run the unit tests by:
