@@ -96,7 +96,7 @@ This function is searching by country and university name.
 client.search("Turkey", "East")
 ```
 
-
+### Filters
 
 ## Unit Tests and Continuous Integration
 
