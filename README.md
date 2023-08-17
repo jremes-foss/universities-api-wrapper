@@ -100,6 +100,9 @@ client.search("Turkey", "East")
 
 You can filter elements of the search results via `filter` parameter in `search` function.
 
+```python
+```
+
 ## Unit Tests and Continuous Integration
 
 This module has built-in unit test kit in `tests` folder. You can run the unit tests by:
