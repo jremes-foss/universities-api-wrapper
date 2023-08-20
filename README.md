@@ -101,6 +101,7 @@ client.search("Turkey", "East")
 You can filter elements of the search results via `filter` parameter in `search` function.
 
 ```python
+client.search("Turkey", "Ankara", "names")
 ```
 
 ## Unit Tests and Continuous Integration
