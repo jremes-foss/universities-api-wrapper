@@ -98,7 +98,7 @@ client.search("Turkey", "East")
 
 ### Filters
 
-You can filter elements of the search results via `filter` parameter in `search` function.
+You can filter elements of the search results via `filter` parameter in `search` function. For example, to return only university names you can use the following:
 
 ```python
 client.search("Turkey", "Ankara", "names")
