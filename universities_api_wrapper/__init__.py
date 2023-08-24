@@ -45,6 +45,8 @@ class HipolabsUniversitiesAPI:
             names.append(uni['name'])
         return names
 
+
+
     def search(self, country=None, name=None, filters=None) -> dict:
         """ This method searches by name and country. """
 
