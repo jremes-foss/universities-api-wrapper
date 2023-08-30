@@ -73,7 +73,7 @@ class HipolabsUniversitiesAPI:
         if filters == 'names':
             response = self.get_names(response)
         elif filters == 'websites':
-            pass
+            response = self.get_websites(response)
 
         return response
 
