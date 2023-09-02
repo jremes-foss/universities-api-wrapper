@@ -106,6 +106,9 @@ client.search("Turkey", "Ankara", "names")
 
 To filter websites, use `websites` filter:
 
+```python
+```
+
 ## Unit Tests and Continuous Integration
 
 This module has built-in unit test kit in `tests` folder. You can run the unit tests by:
