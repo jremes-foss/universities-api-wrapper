@@ -14,7 +14,7 @@ setup(
         long_description=LONG_DESCRIPTION,
         packages=find_packages(),
         url='https://github.com/jremes-foss/universities-api-wrapper/',
-        download_url='https://github.com/jremes-foss/universities-api-wrapper/archive/refs/tags/0.0.3.tar.gz',
+        download_url='https://github.com/jremes-foss/universities-api-wrapper/archive/refs/tags/0.0.4.tar.gz',
         install_requires=['requests', 'mock'],
         keywords=['python', 'api', 'wrapper', 'education', 'universities'],
         classifiers= [
