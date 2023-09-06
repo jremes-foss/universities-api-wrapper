@@ -45,6 +45,13 @@ class HipolabsUniversitiesAPI:
             names.append(uni['name'])
         return names
 
+    def get_websites(self, response: Response):
+        """ Returns websites of universities in a list. """
+        websites = []
+        for uni in response:
+            websites.append(uni['web_pages'])
+        return websites
+
     def search(self, country=None, name=None, filters=None) -> dict:
         """ This method searches by name and country. """
 
@@ -65,6 +72,8 @@ class HipolabsUniversitiesAPI:
 
         if filters == 'names':
             response = self.get_names(response)
+        elif filters == 'websites':
+            response = self.get_websites(response)
 
         return response
 

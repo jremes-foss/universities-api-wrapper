@@ -104,6 +104,12 @@ You can filter elements of the search results via `filter` parameter in `search`
 client.search("Turkey", "Ankara", "names")
 ```
 
+To filter websites, use `websites` filter:
+
+```python
+client.search("Turkey", "Ankara", "names")
+```
+
 ## Unit Tests and Continuous Integration
 
 This module has built-in unit test kit in `tests` folder. You can run the unit tests by:
