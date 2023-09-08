@@ -107,7 +107,7 @@ client.search("Turkey", "Ankara", "names")
 To filter websites, use `websites` filter:
 
 ```python
-client.search("Turkey", "Ankara", "names")
+client.search("Turkey", "Ankara", "websites")
 ```
 
 ## Unit Tests and Continuous Integration
