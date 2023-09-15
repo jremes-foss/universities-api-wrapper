@@ -12,6 +12,7 @@ def method():
 
 @pytest.fixture
 def port():
+    """ Returns port. """
     return "8080"
 
 client = HipolabsUniversitiesAPI(method, port)
