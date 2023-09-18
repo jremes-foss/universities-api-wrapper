@@ -52,6 +52,9 @@ class HipolabsUniversitiesAPI:
             websites.append(uni['web_pages'])
         return websites
 
+    def get_domains(self, response: Response):
+        pass
+
     def search(self, country=None, name=None, filters=None) -> dict:
         """ This method searches by name and country. """
 
