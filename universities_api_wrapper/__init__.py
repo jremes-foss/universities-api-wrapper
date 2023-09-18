@@ -53,6 +53,7 @@ class HipolabsUniversitiesAPI:
         return websites
 
     def get_domains(self, response: Response):
+        """ Returns domains of universities in a list. """
         pass
 
     def search(self, country=None, name=None, filters=None) -> dict:
