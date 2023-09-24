@@ -56,7 +56,7 @@ class HipolabsUniversitiesAPI:
         """ Returns domains of universities in a list. """
         domains = []
         for uni in response:
-            pass
+            domains.append(uni['domains'])
         return domains
 
     def search(self, country=None, name=None, filters=None) -> dict:
