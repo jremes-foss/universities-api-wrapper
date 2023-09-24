@@ -81,6 +81,8 @@ class HipolabsUniversitiesAPI:
             response = self.get_names(response)
         elif filters == 'websites':
             response = self.get_websites(response)
+        elif filters == 'domains':
+            pass
 
         return response
 
