@@ -116,6 +116,8 @@ To filter domains, use `domains` filter:
 client.search("Turkey", "Ankara", "domains")
 ```
 
+Please note: Domain filter will return list which elements are lists.
+
 ## Unit Tests and Continuous Integration
 
 This module has built-in unit test kit in `tests` folder. You can run the unit tests by:
